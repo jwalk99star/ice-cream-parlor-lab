@@ -52,16 +52,11 @@ function drawCart() {
 
   function drawTotal() {
     let cartSum = 0
-
     iceCream.forEach(iceCreamFlavor => {
-
       cartSum += iceCreamFlavor.price * iceCreamFlavor.quantity
     })
-
     let cartTotalElement = document.getElementById('cartTotal')
-
     cartTotalElement.innerText = cartSum.toFixed(2).toString()
-
   }
 
 
