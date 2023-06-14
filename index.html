@@ -31,24 +31,10 @@
       <!-- set smaller environments: menu, items, cart-->
 
       <!-- SECTION MENU -->
-      <div class="col-8 menu">
+      <div class="col-12 menu">
         <div class="row text-center">
 
           <!-- SECTION MENU ITEMS -->
-          <div class="col-3 p-4">
-            <div class="card">
-              <img src="https://celebratingsweets.com/wp-content/uploads/2014/04/Cookie-Dough-Ice-Cream-1-5.jpg" alt="">
-              <div class="card-body">
-                <p class="card-title">
-                  Cookie Dough
-                </p>
-                <p>$1.25</p>
-                <!-- <button onclick="addItemToCart()" class="btn btn-primary">
-                  <p>Add to Cart</p>
-                </button> -->
-              </div>
-            </div>
-          </div>
 
           <div class="col-3 p-4">
             <div class="card">
@@ -67,6 +53,23 @@
             </div>
           </div>
 
+
+          <div class="col-3 p-4">
+            <div class="card">
+              <img src="https://celebratingsweets.com/wp-content/uploads/2014/04/Cookie-Dough-Ice-Cream-1-5.jpg" alt="">
+              <div class="card-body">
+                <p class="card-title">
+                  Cookie Dough
+                </p>
+                <p>$1.25</p>
+                <button onclick="addScoopToCart('Cookie Dough')" class="btn btn-primary">
+                  <p>Add to Cart</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+
           <div class="col-3 p-4">
             <div class="card">
               <img src="https://www.realfoodwithjessica.com/wp-content/uploads/2017/07/paleostrawberryicecream2.jpg"
@@ -76,47 +79,48 @@
                   Strawberry
                 </p>
                 <p>$1.25</p>
-                <!-- <button onclick="addItemToCart()" class="btn btn-primary">
+                <button onclick="addScoopToCart('Strawberry')" class="btn btn-primary">
                   <p>Add to Cart</p>
-                </button> -->
+                </button>
               </div>
             </div>
-
-
-            <!-- end menu row(new) and col -->
           </div>
-        </div>
 
-        <!-- SECTION Cart -->
-        <div class="col-3">
-          <div class="h-100 d-flex flex-column justify-content-between"></div>
-          <h2>Cart</h2>
-          <ul id="cart" class="">
-            <!-- STUB JF -->
-            <!-- <li>
-              <div class="d-flex justify-content-between">
-                <span>${iceCreamFlavors.name} x${iceCreamFlavors.quantity}</span>
-                <span>${iceCreamFlavors.price}</span>
+
+          <!-- SECTION Cart -->
+          <div class="col-3">
+            <div class="h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h2>Cart</h2>
+                <ul id="cart" class="">
+                  <!-- STUB JF -->
+                  <!-- <li>
+                    <div class="d-flex justify-content-between">
+                      <span>${iceCreamFlavors.name} x${iceCreamFlavors.quantity}</span>
+                      <span>${iceCreamFlavors.price}</span>
+                    </div>
+                  </li> -->
+                </ul>
               </div>
-            </li> -->
+              <div class="d-flex justify-content-between align-items-center">
+                <h3>Total: $<span id="cartTotal">0</span></h3>
+                <button onclick="cashOut()" class="btn btn-success">Check Out</button>
+              </div>
+            </div>
+          </div>
 
-
-          </ul>
+          <!-- end menu row(new) and col -->
         </div>
-        <div class="d-flex">
-          <h3>Total: $<span id="cartTotal">0</span></h3>
-          <button onclick="checkOut()" class="btn btn-success">Check Out</button>
-        </div>
-
-        <!-- end menu row -->
       </div>
-      <!-- end menu col-8 -->
+      <!-- end menu row -->
+    </div>
+    <!-- end menu col-8 -->
     </div>
     <!-- end main row -->
-    </div>
   </main>
 
-  <footer></footer>
+  <footer id="footer"></footer>
+  <!-- check JF notes in js!!! -->
 
   <!-- sweet alerts script tag -->
 
@@ -124,23 +128,6 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
